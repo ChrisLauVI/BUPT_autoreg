@@ -1,8 +1,10 @@
 name: Automatically submit the 2019-nCoV report sheet of BUPT
 
+time：${random.int(10)}
+
 on:
   schedule:
-    - cron: "0/10 0 * * *"
+    - cron: "time 0 * * *"
   push:
 
 jobs:
